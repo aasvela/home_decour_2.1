@@ -5,6 +5,7 @@
     /*Colors*/
     --primary-clr: #bfffbf;
     --secondary-clr: #0a254d;
+    --white-clr: #ffffff;
 
     /*bg colors*/
     --primary-bg-clr: #000000;
@@ -37,7 +38,7 @@ html {
     }
     p {
     font-family: var(--ff-primary);
-    color: var(--primary-clr);
+    color: var(--white-clr);
     font-size: var(--fs-1);
     }
     a {
