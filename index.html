@@ -4,105 +4,89 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Manrope&family=Permanent+Marker&display=swap"
-          rel="stylesheet"
-        />
- 
-        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Julius+Sans+One&family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <div>
-            <div>
-                <h1>Experimenting with rarely used HTML elements</h1>
+        <div> 
+            <div class="logo-container">
+                <img class="logo" src="assets/My-project.png">
             </div>
-            <nav>
-             
+            <nav>   
                 <details class="sm">
                     <summary>
-                        <pre class="burger-lines">
+                        <!-- <pre class="burger-lines">
 ___
 ___
 ___
-                        </pre>
+                        </pre> -->
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
                     </summary>
                         <menu class="sm stack">
                             <li>
-                                <a href="index.html">
-                                Home
-                                </a>
+                                <a class="active" href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="details.html">
-                                    Details
-                                    </a>
+                                <a href="art.html">Art</a>
                             </li>
                             <li>
-                                <a href="pre.html">
-                                    Pre
-                                    </a>
-                            </li>
-                            <li>
-                                <a href="menu.html">
-                                    Menu
-                                    </a>
+                                <a href="interior.html">Interior</a>
                             </li>
                         </menu>
                 </details>
-            
-            <menu class="md">
-                <li>
-                    <a href="index.html">
-                    Home
-                    </a>
-                </li>
-                <li>
-                    <a href="details.html">
-                        Details
-                        </a>
-                </li>
-                <li>
-                    <a href="pre.html">
-                        Pre
-                        </a>
-                </li>
-                <li>
-                    <a href="menu.html">
-                        Menu
-                        </a>
-                </li>
-            </menu>
-        </nav>
+                <menu class="md">
+                    <li>
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="art.html">Art</a>
+                    </li>
+                    <li>
+                        <a href="interior.html">Interior</a>
+                    </li>
+                </menu>
+            </nav>
         </div>
-        <div class="container">
-            <h2>Why</h2>
+        <div class="container col">
+            <h2>My colors</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis magnam doloribus nesciunt saepe, impedit recusandae cum provident illum tenetur cumque error assumenda laudantium accusamus animi neque, odit omnis beatae!
             </p>
+            <div class="row">
+                <div class="color-container shadow">
+                    <div class="color-box" style="background-color: var(--clr-1);"></div>
+                        <div class="text-container">
+                            <h3>#F9C89B</h3>
+                         <p>a light, warm sandy color</p>
+                        </div>
+                </div>
+                <div class="color-container shadow">
+                    <div class="color-box" style="background-color: var(--clr-2);"></div>
+                    <div class="text-container">
+                        <h3>#F6A623</h3>
+                        <p>a bright, cheerful orange</p>
+                    </div>
+                </div>
+                <div class="color-container shadow">
+                    <div class="color-box" style="background-color: var(--clr-3);"></div>
+                    <div class="text-container">
+                        <h3>#9E2B25</h3>
+                        <p>a deep, rich red</p>
+                    </div>
+                </div>
+                <div class="color-container shadow">
+                    <div class="color-box" style="background-color: var(--clr-4);"></div>
+                    <div class="text-container">
+                        <h3>#2D2D2D</h3>
+                        <p>a dark, neutral grey</p>
+                    </div>
+                </div>
+             </div>
         </div>
-        <div class="container">
-            <h2>HTML</h2>
-            <p>
-                Im using this page to experiment with html elements that is not to often seen in use.
-                For now the page is using 
-            </p>
-            <div class="container">
-                <h3>Details</h3>
-                <p>Something about details</p>
-                <pre>
-    <code>
-    <span translate="no"> &lt;details&gt;&lt;/details&gt; </span>
-    </code>
-                </pre>  
-            </div>
-
-
-        </div>
-    
-        <script src="" async defer></script>
+        <script src="js/script.js" async defer></script>
     </body>
 </html
