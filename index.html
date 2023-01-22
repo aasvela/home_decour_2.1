@@ -1,9 +1,11 @@
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title></title>
-		<meta name="description" content="" />
+		<title>Moods of Nittedal - Home decour from behind Oslo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="Discover stylish and affordable home decorations at our online store. Browse our selection of furniture, corks, and more."
+			content="" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -12,23 +14,28 @@
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
-		<div>
+		<header>
 			<div class="logo-container">
-				<img class="logo" src="assets/My-project.png" />
+				<img
+					class="logo"
+					src="assets/My-project.png"
+					alt="Logo for Moods of Nittedal. It says Moods of Nittedal." />
 			</div>
 			<nav>
-				<details class="sm">
-					<summary>
+				<details class="sm" aria-label="Main Navigation" id="main-nav">
+					<summary aria-labelledby="main-nav">
+						<!-- <img class="icon" src="assets/hamburger.png" /> -->
+
 						<!-- <pre class="burger-lines">
 ___
 ___
 ___
-                        </pre> -->
+					</pre> -->
 						<div class="line"></div>
 						<div class="line"></div>
 						<div class="line"></div>
 					</summary>
-					<menu class="sm stack">
+					<menu class="sm stack" aria-labelledby="main-nav">
 						<li>
 							<a class="active" href="index.html">Home</a>
 						</li>
@@ -40,7 +47,7 @@ ___
 						</li>
 					</menu>
 				</details>
-				<menu class="md">
+				<menu class="md" aria-labelledby="main-nav">
 					<li>
 						<a class="active" href="index.html">Home</a>
 					</li>
@@ -52,46 +59,56 @@ ___
 					</li>
 				</menu>
 			</nav>
-		</div>
-		<div class="container col">
-			<h2>My colors</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis
-				magnam doloribus nesciunt saepe, impedit recusandae cum provident illum
-				tenetur cumque error assumenda laudantium accusamus animi neque, odit
-				omnis beatae!
-			</p>
-			<div class="row">
-				<div class="color-container shadow">
-					<div class="color-box" style="background-color: var(--clr-1)"></div>
-					<div class="text-container">
-						<h3>#F9C89B</h3>
-						<p>a light, warm sandy color</p>
-					</div>
+		</header>
+		<main>
+			<div class="container"><h1>Welcome to Moods of Nittedal</h1></div>
+			<div class="product-intro-container">
+				<div class="img-container">
+					<figure tabindex="0" aria-labelledby="img-description">
+						<img
+							class="shadow"
+							src="assets/chair.jpg"
+							alt="Yellow chair, a painting of a bear on the wall and a table with a glass of wiskey." />
+						<figcaption id="img-description" class="img-description">
+							A yellow chair and refreshments, including a painting of a bear on
+							the wall and a table with a glass of whiskey.
+						</figcaption>
+					</figure>
 				</div>
-				<div class="color-container shadow">
-					<div class="color-box" style="background-color: var(--clr-2)"></div>
-					<div class="text-container">
-						<h3>#F6A623</h3>
-						<p>a bright, cheerful orange</p>
-					</div>
-				</div>
-				<div class="color-container shadow">
-					<div class="color-box" style="background-color: var(--clr-3)"></div>
-					<div class="text-container">
-						<h3>#9E2B25</h3>
-						<p>a deep, rich red</p>
-					</div>
-				</div>
-				<div class="color-container shadow">
-					<div class="color-box" style="background-color: var(--clr-4)"></div>
-					<div class="text-container">
-						<h3>#2D2D2D</h3>
-						<p>a dark, neutral grey</p>
-					</div>
+				<div class="text-container">
+					<p>
+						At <abbr>MoN</abbr> we strive to bring you the most fantastic
+						products from all over the world.
+					</p>
+					<p>
+						Browse our catalouge and discover evertying from <abbr>corks</abbr>,
+						<abbr>bears</abbr>, <abbr>lamps</abbr> and one more thing.
+					</p>
 				</div>
 			</div>
-		</div>
+			<div class="text-container">
+				<h2>An article</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+					beatae ea quae officiis ab dignissimos qui vel autem, dolor nostrum
+					rem doloremque debitis minima veritatis aliquid quibusdam. Sint, quis
+					maiores.
+				</p>
+			</div>
+			<div class="img-container">
+				<figure tabindex="0" aria-labelledby="img-description">
+					<img
+						class="shadow"
+						src="assets/ldv-roses-1.png"
+						alt="Yellow chair, a painting of a bear on the wall and a table with a glass of wiskey." />
+					<figcaption id="img-description" class="img-description">
+						A yellow chair and refreshments, including a painting of a bear on
+						the wall and a table with a glass of whiskey.
+					</figcaption>
+				</figure>
+			</div>
+		</main>
+		<footer></footer>
 		<script src="js/script.js" async defer></script>
 	</body>
 </html>

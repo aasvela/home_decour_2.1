@@ -1,10 +1,11 @@
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title></title>
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Moods of Nittedal - Home decour from behind Oslo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="Discover stylish and affordable home decorations at our online store. Browse our selection of furniture, corks, and more."
+			content="" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -13,13 +14,16 @@
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
-		<div>
+		<header>
 			<div class="logo-container">
-				<img class="logo" src="assets/My-project.png" />
+				<img
+					class="logo"
+					src="assets/My-project.png"
+					alt="Logo for Moods of Nittedal. It says Moods of Nittedal." />
 			</div>
 			<nav>
-				<details class="sm">
-					<summary>
+				<details class="sm" aria-label="Main Navigation" id="main-nav">
+					<summary aria-labelledby="main-nav">
 						<!-- <pre class="burger-lines">
 ___
 ___
@@ -29,7 +33,7 @@ ___
 						<div class="line"></div>
 						<div class="line"></div>
 					</summary>
-					<menu class="sm stack">
+					<menu class="sm stack" aria-labelledby="main-nav">
 						<li>
 							<a href="index.html">Home</a>
 						</li>
@@ -41,7 +45,7 @@ ___
 						</li>
 					</menu>
 				</details>
-				<menu class="md">
+				<menu class="md" aria-labelledby="main-nav">
 					<li>
 						<a href="index.html">Home</a>
 					</li>
@@ -53,50 +57,61 @@ ___
 					</li>
 				</menu>
 			</nav>
-		</div>
-		<div class="product-intro-container">
-			<div class="img-container">
-				<img class="shadow" src="assets/chair.jpg" alt="lounge" />
-			</div>
-			<div class="text-container">
-				<h2>Introduction to my products</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsa
-					labore nisi facilis iusto quas perspiciatis consequuntur autem numquam
-					n
-				</p>
-			</div>
-		</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="text-container">
+					<h2>Products</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsa
+						labore nisi facilis iusto quas perspiciatis consequuntur autem
+						numquam natus, laudantium molestias. Culpa excepturi sed tenetur
+						delectus maxime suscipit ullam!
+					</p>
+				</div>
 
-		<div class="container">
-			<div class="text-container">
-				<h2>Products</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsa
-					labore nisi facilis iusto quas perspiciatis consequuntur autem numquam
-					natus, laudantium molestias. Culpa excepturi sed tenetur delectus
-					maxime suscipit ullam!
-				</p>
-			</div>
-
-			<div class="products-container">
-				<div class="product kitchen shadow">
-					<img
-						class="shadow"
-						src="assets/cork.jpg"
-						alt="cork for wine botles" />
-					<h3>Cork</h3>
+				<div class="products-container">
+					<div class="product kitchen shadow">
+						<h3>Kitchen</h3>
+						<figure tabindex="0" aria-labelledby="img-description">
+							<img
+								class="shadow"
+								src="assets/cork.jpg"
+								alt="A plastic cork which can be pumped to empty a winebottle for air, and seals it shut." />
+							<figcaption id="img-description" class="img-description">
+								A plastic cork which can be pumped to empty a winebottle for
+								air, and seals it shut.
+							</figcaption>
+						</figure>
+					</div>
+					<div class="product bedroom shadow">
+						<h3>Bedroom</h3>
+						<figure tabindex="0" aria-labelledby="img-description">
+							<img
+								class="shadow"
+								src="assets/lamp.jpg"
+								alt="A black metal bedside table lamp. The frame is of metal, and painted black. Its not related to the music genere. It has a beige round lamp screen." />
+							<figcaption id="img-description" class="img-description">
+								A black metal bedside table lamp
+							</figcaption>
+						</figure>
+					</div>
+					<div class="product lounge shadow">
+						<h3>Lounge</h3>
+						<figure tabindex="0" aria-labelledby="img-description">
+							<img
+								class="shadow"
+								src="assets/chair.jpg"
+								alt="A yellow chair and refreshments, including a painting of a bear on
+							the wall and a table with a glass of whiskey." />
+							<figcaption id="img-description" class="img-description">
+								A yellow chair and refreshments, including a painting of a bear
+								on the wall and a table with a glass of whiskey.
+							</figcaption>
+						</figure>
+					</div>
 				</div>
-				<div class="product bedroom shadow">
-					<img class="shadow" src="assets/lamp.jpg" alt="bedroom" />
-					<h3>Bedroom</h3>
-				</div>
-				<div class="product lounge shadow">
-					<img class="shadow" src="assets/chair.jpg" alt="lounge" />
-					<h3>Lounge</h3>
-				</div>
-			</div>
-			<!-- <div class="slider-container">
+				<!-- <div class="slider-container">
         <p class="prev">&#10094;</p>
         <div class="slider">
           <div class="slide">
@@ -114,7 +129,9 @@ ___
         </div>
         <p class="next">&#10095;</p>
       </div> -->
-		</div>
+			</div>
+		</main>
+		<footer></footer>
 		<script src="js/script.js"></script>
 	</body>
 </html>
