@@ -30,3 +30,27 @@ Create and code a homepage with HTML and CSS for a Home Decor website to include
 
 <<<REPORT>>>
 
+Module Assignment 3: Fonts
+Goal
+Here you will be tested on choosing of font pairings and styling.
+Brief
+Choose 2-3 fonts for the Home Decor website homepage and products page and style.
+Level 1 Process
+Choose 2-3 fonts for the Home Decor website homepage and products page: Research and find good pairings of fonts for:
+- the headings
+- the body text
+- and a third font for calls to actions.
+Code these fonts into the existing products page for the headings, subheadings and body text, and style with CSS and use relevant heading text, i.e. replace your Latin text from the ast assignment with text content.
+Include a report in which you analyse and explain you choices of fonts and hierarchy of fonts used.
+© Noroff
+
+Marking Criteria / Submission
+Marking Criteria
+Can find background information about different fonts, color compositions and assess its relevance for developing user-oriented solutions and services for the web and mobile devices
+Can find background information about different fonts, color compositions and assess its relevance for developing user-oriented solutions and services for the web and mobile devices
+Can find background information about different fonts, color compositions and assess its relevance for developing user-oriented solutions and services for the web and mobile devices
+Can carry out simple testing of digital products or services and identify potential visual deficiencies
+Can explain his/her choice and use of font, color, imagery and graphics in the development of user-oriented solutions and services for the web and mobile devices
+Submission
+Upload the webpage and submit the URL
+Include a report to be submitted as a PDF  

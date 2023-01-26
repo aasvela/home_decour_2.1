@@ -1,0 +1,74 @@
+{
+  "todo": [
+    {
+      "assignedTo": {
+        "name": "aasvela"
+      },
+      "creation_time": "2023-01-23T13:25:16.160Z",
+      "id": "6",
+      "references": [],
+      "title": "Create add icon"
+    },
+    {
+      "assignedTo": {
+        "name": "aasvela"
+      },
+      "creation_time": "2023-01-23T13:24:27.239Z",
+      "id": "5",
+      "references": [],
+      "title": "Create hamburger icon"
+    },
+    {
+      "assignedTo": {
+        "name": "aasvela"
+      },
+      "creation_time": "2023-01-23T13:22:44.826Z",
+      "id": "2",
+      "references": [],
+      "title": "Implement new fonts for all texts"
+    },
+    {
+      "assignedTo": {
+        "name": "aasvela"
+      },
+      "creation_time": "2023-01-23T13:20:44.719Z",
+      "details": {
+        "content": "- the headings\n- the body text\n- and a third font for calls to actions.",
+        "mime": "text/markdown"
+      },
+      "id": "1",
+      "references": [],
+      "title": "New fonts - needs to pair"
+    },
+    {
+      "assignedTo": {
+        "name": "aasvela"
+      },
+      "creation_time": "2023-01-23T13:24:00.593Z",
+      "id": "4",
+      "references": [],
+      "title": "Replace latin text with own text"
+    },
+    {
+      "assignedTo": {
+        "name": "aasvela"
+      },
+      "creation_time": "2023-01-23T13:22:58.540Z",
+      "id": "3",
+      "references": [],
+      "title": "Style new fonts with css"
+    },
+    {
+      "assignedTo": {
+        "name": "aasvela"
+      },
+      "creation_time": "2023-01-23T13:25:25.771Z",
+      "id": "7",
+      "references": [],
+      "title": "Create remove icon"
+    }
+  ],
+  "in-progress": [],
+  "testing": [],
+  "done": []
+}

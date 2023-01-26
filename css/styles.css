@@ -1,7 +1,7 @@
 :root {
-	--ff-heading: "Libre Baskerville", serif;
-	--ff-primary: "Baskervville", serif;
-	--ff-secondary: "Julius Sans One", sans-serif;
+	--ff-heading: "Libre Baskerville", serif; /*headings*/
+	--ff-primary: "Julius Sans One", sans-serif; /*body text*/
+	--ff-secondary: "Baskervville", serif; /*calls to actions*/
 
 	/*Font sizes*/
 	--fs-1: 1.5rem;
@@ -60,11 +60,11 @@ abbr {
 	font-size: var(--fs-2);
 }
 body {
-	margin: 2rem;
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
 	background: linear-gradient(var(--clr-3), var(--clr-1));
 }
+/*************NAVIGATION AND HEADER***************/
 header {
 	display: flex;
 	flex-direction: column;
@@ -124,29 +124,6 @@ li a {
 	/* font-size: x-large; */
 	/* color: var(--clr-4); */
 }
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 1rem;
-}
-.row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.stack {
-	position: absolute;
-	/* left: 2in; 
-        top: 2in; 
-        width: 3in; 
-        height: 3in;  */
-}
-.shadow {
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
 .logo-container {
 	display: flex;
 	justify-content: center;
@@ -173,12 +150,55 @@ li a {
 .active {
 	text-decoration: underline;
 }
+/********************CONTAINERS*********************/
+.container-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
 .text-container {
 	display: flex;
 	flex-direction: column;
 	margin-left: 2rem;
 }
-
+.product-container {
+	background-color: var(--clr-1);
+	padding: 1rem;
+	margin: 1rem;
+}
+.color-container {
+	container-type: inline-size;
+	background-color: var(--clr-1);
+	width: 30vw;
+	margin: 1rem;
+	padding: 1rem;
+}
+.color-box {
+	margin: 0.5rem;
+	min-width: 120px;
+	min-height: 120px;
+	padding: 0.5rem;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.art-container {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--clr-1);
+	justify-content: center;
+	padding: 1rem;
+}
+.stack {
+	position: absolute;
+	/* left: 2in; 
+        top: 2in; 
+        width: 3in; 
+        height: 3in;  */
+} /********************IMAGES*********************/
 figure {
 	display: flex;
 	flex-flow: column;
@@ -206,61 +226,28 @@ figure:hover figcaption,
 figure:focus figcaption {
 	opacity: 1;
 }
+/**********************STYLES**********************/
+.shadow {
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.shadow:hover {
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.divider-bg {
+	background-color: var(--clr-2);
+	width: 100%;
+	padding: 3rem;
+}
+.divider {
+	width: 100%;
+	padding: 3rem;
+}
+/********************TEXT STYLES*******************/
 
-/* Product Page */
-.product-intro-container {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-}
-.products-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-.product {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--clr-1);
-	padding: 1rem;
-	margin: 1rem;
-}
-.palet-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
-.col {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.color-container {
-	container-type: inline-size;
-	display: flex;
-	flex-direction: column;
-	background-color: var(--clr-1);
-	width: 30vw;
-	margin: 1rem;
-	padding: 1rem;
-}
-.color-box {
-	margin: 0.5rem;
-	min-width: 120px;
-	min-height: 120px;
-	padding: 0.5rem;
-	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-.art-container {
-	display: flex;
-	flex-direction: column;
-	background-color: var(--clr-1);
-	justify-content: center;
-	padding: 1rem;
-}
+/**********************SLIDER**********************/
+
 .slider-container {
 	display: flex;
 	flex-direction: row;
@@ -313,9 +300,18 @@ figure:focus figcaption {
 .slider .next {
 	right: 10px;
 }
+
+/*****************RESPONSIVE*****************/
 .md {
 	display: none;
 }
+.sm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 /**** Greather then 500px****/
 @media (min-width: 500px) {
 	nav {
