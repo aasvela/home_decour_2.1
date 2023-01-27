@@ -9,7 +9,7 @@
 	--fs-3: 2.5rem;
 	--fs-4: 5rem;
 	--fs-5: 3.5rem;
-	--fs-6: 8rem;
+	--fs-6: 5rem;
 
 	/*Colors*/
 	--primary-clr: rgba(241, 155, 111, 100);
@@ -32,26 +32,26 @@ html {
 }
 h1,
 h2 {
-	font-family: var(--ff-secondary);
-	color: var(--clr-1);
+	font-family: var(--ff-primary);
+	color: var(--clr-4);
 	font-size: var(--fs-6);
 	font-weight: 100;
 	font-style: oblique;
 }
 h3 {
 	font-family: var(--ff-secondary);
-	color: var(--clr-4);
+	color: var(--clr-3);
 	font-size: var(--fs-4);
 }
 p {
 	font-family: var(--ff-primary);
 	color: var(--black);
-	font-size: var(--fs-3);
+	font-size: var(--fs-2);
 }
 a {
 	font-family: var(--ff-secondary);
 	color: var(--clr-4);
-	font-size: var(--fs-4);
+	font-size: var(--fs-3);
 	text-decoration: none;
 }
 abbr {
@@ -62,7 +62,7 @@ abbr {
 body {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
-	background: linear-gradient(var(--clr-3), var(--clr-1));
+	background: linear-gradient(var(--clr-1), var(--clr-3));
 }
 main {
 	container-type: inline-size;
@@ -81,7 +81,7 @@ header {
 nav {
 	display: flex;
 	flex-direction: column;
-	margin: 2rem 0 7rem 0;
+	margin: 2rem;
 	max-width: 500px;
 }
 details {
@@ -146,6 +146,9 @@ menu li {
 	flex-direction: column;
 	margin-left: 2rem;
 }
+.title{
+	margin: 2rem 0 2rem 0;
+}
 .product-container {
 	background-color: var(--clr-1);
 	padding: 1rem;
@@ -183,7 +186,7 @@ figure {
 	display: flex;
 	flex-flow: column;
 	padding: 5px;
-	max-width: 660px;
+	max-width: 500px;
 	margin: auto;
 }
 figure img {
@@ -215,6 +218,18 @@ figure:focus figcaption {
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
 		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+.pop-shadow{
+	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: -76px;
+    margin-bottom: -76px;
+}
+.pop-shadow-2{
+	box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 50%);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 0px 0px 150px 0px;
+    --e-column-margin-right: 0px;
+    --e-column-margin-left: 0px;
+}
 .divider-bg {
 	background-color: var(--clr-2);
 	width: 100%;
@@ -223,6 +238,9 @@ figure:focus figcaption {
 .divider {
 	width: 100%;
 	padding: 3rem;
+}
+.title{
+	margin: 2rem 0	2rem 0;
 }
 /********************TEXT STYLES*******************/
 
@@ -357,7 +375,7 @@ figure:focus figcaption {
 		flex-direction: column;
 		/* background-color: var(--clr-2); */
 		border-radius: 5pc;
-		margin: 2rem 0 7rem 0;
+		margin: 2rem;
 		width: 100%;
 	}
 	details {
