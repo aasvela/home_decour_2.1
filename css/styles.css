@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap'); 
+@import	url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 :root {
-	--ff-heading: "Libre Baskerville", serif; /*headings*/
-	--ff-primary: "Julius Sans One", sans-serif; /*body text*/
-	--ff-secondary: "Baskervville", serif; /*calls to actions*/
+	--ff-heading: "Julius Sans One", serif; /*headings*/
+	--ff-primary: "Manrope", sans-serif; /*body text*/
+	--ff-secondary: "Hind Madurai", serif; /*calls to actions*/
 
 	/*Font sizes*/
 	--fs-1: 1.5rem;
@@ -30,13 +33,17 @@
 }
 html {
 }
+h1 {
+	text-shadow: 2px 2px 4px #ffffff;
+}
 h1,
 h2 {
-	font-family: var(--ff-primary);
+	font-family: var(--ff-heading);
 	color: var(--clr-4);
 	font-size: var(--fs-6);
 	font-weight: 100;
 	font-style: oblique;
+	text-shadow: 2px 2px 4px #ffffff;
 }
 h3 {
 	font-family: var(--ff-secondary);
@@ -53,10 +60,11 @@ a {
 	color: var(--clr-4);
 	font-size: var(--fs-3);
 	text-decoration: none;
+	text-shadow: 2px 2px 4px #ffffff;
 }
 abbr {
-	font-family: var(--ff-heading);
-	color: var(--clr-1);
+	font-family: var(--ff-secondary);
+	color: var(--clr-3);
 	font-size: var(--fs-2);
 }
 body {
@@ -145,6 +153,7 @@ menu li {
 	display: flex;
 	flex-direction: column;
 	margin-left: 2rem;
+	
 }
 .title{
 	margin: 2rem 0 2rem 0;
@@ -194,12 +203,13 @@ figure img {
 	height: auto;
 }
 figcaption {
-	background-color: rgb(250, 250, 250);
+	background-color: rgb(250, 250, 250, 30%);
 	color: rgb(0, 0, 0);
 	font: italic;
 	font-size: var(--fs-2);
 	padding: 3px;
 	text-align: center;
+	margin-top: -50px;
 }
 figcaption {
 	opacity: 0;
@@ -226,9 +236,9 @@ figure:focus figcaption {
 .pop-shadow-2{
 	box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 50%);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    margin: 0px 0px 150px 0px;
+    /* margin: 0px 0px 150px 0px;
     --e-column-margin-right: 0px;
-    --e-column-margin-left: 0px;
+    --e-column-margin-left: 0px; */
 }
 .divider-bg {
 	background-color: var(--clr-2);
@@ -303,25 +313,16 @@ figure:focus figcaption {
 @container main (max-width: 1000px) {
 	h1,
 	h2 {
-		font-family: var(--ff-secondary);
-		color: var(--clr-1);
 		font-size: 8cqw;
 		font-weight: 100;
-		font-style: oblique;
 	}
 	h3 {
-		font-family: var(--ff-secondary);
-		color: var(--clr-4);
 		font-size: var(--fs-4);
 	}
 	p {
-		font-family: var(--ff-primary);
-		color: var(--black);
-		font-size: 3cqw;
+		font-size: 2cqw;
 	}
 	a {
-		font-family: var(--ff-secondary);
-		color: var(--clr-4);
 		font-size: 3cqw;
 		text-decoration: none;
 	}
@@ -335,27 +336,10 @@ figure:focus figcaption {
 	}
 }
 @container header (max-width: 1000px) {
-	h1,
-	h2 {
-		font-family: var(--ff-secondary);
-		color: var(--clr-1);
-		font-size: 8cqw;
-		font-weight: 100;
-		font-style: oblique;
-	}
-	h3 {
-		font-family: var(--ff-secondary);
-		color: var(--clr-4);
-		font-size: var(--fs-4);
-	}
 	p {
-		font-family: var(--ff-primary);
-		color: var(--black);
 		font-size: 3cqw;
 	}
 	a {
-		font-family: var(--ff-secondary);
-		color: var(--clr-4);
 		font-size: 3cqw;
 		text-decoration: none;
 	}
